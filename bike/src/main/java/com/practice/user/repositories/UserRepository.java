@@ -1,8 +1,8 @@
-package com.globomatics.bike.repositories;
+package com.practice.user.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.globomatics.bike.models.User;
+import com.practice.user.models.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 

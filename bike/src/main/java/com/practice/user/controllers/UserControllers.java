@@ -1,4 +1,4 @@
-package com.globomatics.bike.controllers;
+package com.practice.user.controllers;
 
 import java.util.List;
 
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.globomatics.bike.models.User;
-import com.globomatics.bike.repositories.UserRepository;
+import com.practice.user.models.User;
+import com.practice.user.repositories.UserRepository;
 
 @RestController
 @RequestMapping("users")

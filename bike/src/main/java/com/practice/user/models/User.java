@@ -1,4 +1,4 @@
-package com.globomatics.bike.models;
+package com.practice.user.models;
 
 import java.math.BigDecimal;
 import java.util.Date;
