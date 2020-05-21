@@ -1,16 +1,11 @@
 package com.practice.user.models;
 
-import java.math.BigDecimal;
-import java.util.Date;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonFormat.Shape;
 
 @Entity
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
@@ -25,14 +20,14 @@ public class User {
 	private String type;
 	private String email;
 	private String phone;
-	private String model;
-	private String serialNumber;
-	private BigDecimal purchasePrice;
+	//private String model;
+	//private String serialNumber;
+	//private BigDecimal purchasePrice;
 	
-	@JsonFormat(shape = Shape.STRING, pattern = "MM-dd-yyyy")
-	private Date purchaseDate;
-
-	private boolean contact;
+//	@JsonFormat(shape = Shape.STRING, pattern = "MM-dd-yyyy")
+//	private Date purchaseDate;
+//
+//	private boolean contact;
 	
 	public String getName() {
 		return name;
@@ -52,41 +47,23 @@ public class User {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	public String getModel() {
-		return model;
-	}
-	public void setModel(String model) {
-		this.model = model;
-	}
-	public String getSerialNumber() {
-		return serialNumber;
-	}
-	public void setSerialNumber(String serialNumber) {
-		this.serialNumber = serialNumber;
-	}
-	public BigDecimal getPurchasePrice() {
-		return purchasePrice;
-	}
-	public void setPurchasePrice(BigDecimal purchasePrice) {
-		this.purchasePrice = purchasePrice;
-	}
-	public Date getPurchaseDate() {
-		return purchaseDate;
-	}
-	public void setPurchaseDate(Date purchaseDate) {
-		this.purchaseDate = purchaseDate;
-	}
-	public boolean isContact() {
-		return contact;
-	}
-	public void setContact(boolean contact) {
-		this.contact = contact;
-	}
 	public long getId() {
 		return id;
 	}
 	public void setId(long id) {
 		this.id = id;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 	
 
